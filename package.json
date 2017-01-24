@@ -1,0 +1,14 @@
+{
+  "name": "sg-api-customize-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Yongtao Tang",
+  "license": "MIT",
+  "dependencies": {
+    "sg-api-abstract": "git+https://github.com/jefftong/sg-api-abstract.git"
+  }
+}
