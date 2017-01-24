@@ -4,8 +4,8 @@ const SGApi_abstract = require('sg-api-abstract'),
 module.exports = class SGApiCustomizeForm_ausOpen extends SGApiCustomizeForm{
     constructor(token,fid){
         super(token,fid);
-        this._winnerId = null;
-        this._matchId = null;
+        this._winnerid = null;
+        this._matchid = null;
     }
 
     _init(){
