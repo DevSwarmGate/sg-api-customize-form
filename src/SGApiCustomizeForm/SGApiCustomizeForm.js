@@ -1,6 +1,6 @@
 const SGApi_abstract = require('sg-api-abstract');
 
-module.exports = class SGFormApi extends SGApi_abstract{
+module.exports = class SGApiCustomizeForm extends SGApi_abstract{
     constructor(token,fid){
         super(token,'ApiCustomizeform');
         this._formId = fid;
