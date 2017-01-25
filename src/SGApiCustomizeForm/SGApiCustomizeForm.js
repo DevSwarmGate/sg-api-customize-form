@@ -5,8 +5,6 @@ module.exports = class SGApiCustomizeForm extends SGApi_abstract{
     constructor(token,fid){
         super(token,'ApiCustomizeform');
         this._formId = fid;
-        this._winnerId = null;
-        this._matchId = null;
         this._config = this._init();
     }
 
