@@ -1,5 +1,13 @@
 module.exports = function(_this){
     return{
+        getPercentage:{
+            method:'GET',
+            urlData:{
+                fid:_this._getProp('formId'),
+                matchid:_this._getProp('matchid'),
+                winnerid:_this._getProp('winnerid'),
+            }
+        },
         getForm:{
             method:'GET',
             urlData:{
@@ -16,6 +24,13 @@ module.exports = function(_this){
             method:'GET',
             urlData:{
                 fid:_this._getProp('formId'),
+            }
+        },
+        getSubmissionBySid:{
+            method:'GET',
+            urlData:{
+                fid:_this._getProp('formId'),
+                sid:_this._getProp('sid')
             }
         },
         addSubmission:{
@@ -54,14 +69,6 @@ module.exports = function(_this){
             urlData:{
                 fid:_this._getProp('formId'),
             }
-        },
-        getPercentage:{
-            method:'GET',
-            urlData:{
-                fid:_this._getProp('formId'),
-                matchid:_this._getProp('matchid'),
-                winnerid:_this._getProp('winnerid'),
-            }
-        },
+        }
     };
 };
