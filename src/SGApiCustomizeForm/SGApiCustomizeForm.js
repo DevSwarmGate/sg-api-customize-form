@@ -2,13 +2,18 @@ const SGApi_abstract = require('sg-api-abstract'),
     _makeApi = require('./_makeApi');
 
 module.exports = class SGApiCustomizeForm extends SGApi_abstract{
-    constructor(token,fid){
+    constructor(token,fid,option){
         super(token,'ApiCustomizeform');
         this._formId = fid;
-        this._config = this._init();
+        this._config = this._init(option);
     }
 
-    _init(){
+    _init(option){
+        if(option !== undefined){
+            for(let o in option){
+                this[`_${o}`] = option[o];
+            }
+        }
         return _makeApi(this);
     }
 
