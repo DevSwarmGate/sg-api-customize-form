@@ -33,6 +33,12 @@ module.exports = function(_this){
                 sid:_this._getProp('sid')
             }
         },
+        addSubmissionUnique:{
+            method:'POST',
+            urlData:{
+                fid:_this._getProp('formId'),
+            }
+        },
         addSubmission:{
             method:'POST',
             urlData:{
