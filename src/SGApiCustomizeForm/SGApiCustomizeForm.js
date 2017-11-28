@@ -3,7 +3,7 @@ const SGApi_abstract = require('sg-api-abstract'),
 
 module.exports = class SGApiCustomizeForm extends SGApi_abstract{
     constructor(token,fid,option){
-        super(token,'ApiCustomizeform');
+        super(token,'ApiCustomizeform',option._host);
         this._formId = fid;
         this._config = this._init(option);
     }
